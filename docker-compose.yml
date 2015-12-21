@@ -2,7 +2,6 @@ newrelic_elasticsearch_agent:
   build: .
   links:
     - elasticsearch
-  command: start
   env_file:
     - .env
 elasticsearch:
