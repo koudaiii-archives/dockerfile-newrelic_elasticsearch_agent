@@ -10,5 +10,4 @@ RUN mv newrelic_elasticsearch_agent-1.3.0 app
 WORKDIR /app
 RUN bundle install -j4 --without test development --system
 
-ENTRYPOINT ["./newrelic_elasticsearch_agent.daemon"]
-CMD ["--help"]
+CMD ["./newrelic_elasticsearch_agent"]
